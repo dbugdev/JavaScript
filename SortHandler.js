@@ -20,8 +20,8 @@ class SortHandler {
     return arr;
   }
   static insersionSort(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-      sort(i + 1);
+    for (let i = 1; i < arr.length; i++) {
+      sort(i);
     }
     function sort(last) {
       if (last === 0 || arr[last] > arr[last - 1]) {

@@ -1,6 +1,5 @@
-const SortHandler = require('./SortHandler')
+const SortHandler = require('./SortHandler');
 
-let myArray = [3,5,1,4,2]
-
-let sortedArray = SortHandler.selectionSort(myArray)
+let myArray = [5, 4, 3, 2, 1];
+let sortedArray = SortHandler.insersionSort(myArray);
 console.log(sortedArray);
