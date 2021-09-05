@@ -19,7 +19,7 @@ class SortHandler {
     }
     return arr;
   }
-  static insersionSort(arr) {
+  static insertionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
       sortLeft(i);
     }
