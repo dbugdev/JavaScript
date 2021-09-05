@@ -21,14 +21,14 @@ class SortHandler {
   }
   static insersionSort(arr) {
     for (let i = 1; i < arr.length; i++) {
-      sort(i);
+      sortLeft(i);
     }
-    function sort(last) {
+    function sortLeft(last) {
       if (last === 0 || arr[last] > arr[last - 1]) {
         return;
       }
       [arr[last], arr[last - 1]] = [arr[last - 1], arr[last]];
-      sort(--last);
+      sortLeft(--last);
     }
     return arr;
   }
